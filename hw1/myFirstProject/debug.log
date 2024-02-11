@@ -1,0 +1,32 @@
+INFO 2024-02-11 12:37:25,341 autoreload 26244 3632 Watching for file changes with StatReloader
+INFO 2024-02-11 12:37:43,735 views 26244 21524 Index page was requested.
+INFO 2024-02-11 12:37:43,735 basehttp 26244 21524 "GET / HTTP/1.1" 200 9
+WARNING 2024-02-11 12:37:43,947 log 26244 21524 Not Found: /favicon.ico
+WARNING 2024-02-11 12:37:43,947 basehttp 26244 21524 "GET /favicon.ico HTTP/1.1" 404 2446
+INFO 2024-02-11 12:38:44,624 basehttp 26244 21524 "GET /about HTTP/1.1" 301 0
+INFO 2024-02-11 12:38:44,635 views 26244 37512 About page was requested.
+INFO 2024-02-11 12:38:44,635 basehttp 26244 37512 "GET /about/ HTTP/1.1" 200 8
+INFO 2024-02-11 12:59:28,064 autoreload 26244 3632 C:\geekbrains\django\hw1\myFirstProject\myApp\views.py changed, reloading.
+INFO 2024-02-11 12:59:28,894 autoreload 30340 36268 Watching for file changes with StatReloader
+INFO 2024-02-11 12:59:44,475 autoreload 30340 36268 C:\geekbrains\django\hw1\myFirstProject\myApp\views.py changed, reloading.
+INFO 2024-02-11 12:59:45,224 autoreload 1916 28860 Watching for file changes with StatReloader
+INFO 2024-02-11 13:00:51,935 autoreload 1916 28860 C:\geekbrains\django\hw1\myFirstProject\myFirstProject\settings.py changed, reloading.
+INFO 2024-02-11 13:00:52,718 autoreload 30800 19360 Watching for file changes with StatReloader
+INFO 2024-02-11 13:00:59,164 views 30800 32228 Index page was requested.
+ERROR 2024-02-11 13:00:59,251 log 30800 32228 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Alex\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Alex\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\Alex\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view myApp.views.index didn't return an HttpResponse object. It returned None instead.
+ERROR 2024-02-11 13:00:59,262 basehttp 30800 32228 "GET / HTTP/1.1" 500 67983
+INFO 2024-02-11 13:01:25,141 autoreload 30800 19360 C:\geekbrains\django\hw1\myFirstProject\myApp\views.py changed, reloading.
+INFO 2024-02-11 13:01:25,759 autoreload 28712 34620 Watching for file changes with StatReloader
+INFO 2024-02-11 13:01:31,019 views 28712 39980 Index page was requested.
+INFO 2024-02-11 13:01:31,019 basehttp 28712 39980 "GET / HTTP/1.1" 200 297
+INFO 2024-02-11 13:01:41,119 basehttp 28712 39980 "GET /about HTTP/1.1" 301 0
+INFO 2024-02-11 13:01:41,132 views 28712 3080 About page was requested.
+INFO 2024-02-11 13:01:41,134 basehttp 28712 3080 "GET /about/ HTTP/1.1" 200 349
