@@ -1,0 +1,75 @@
+INFO 2024-02-17 13:59:40,687 autoreload 40952 20708 Watching for file changes with StatReloader
+INFO 2024-02-17 14:00:09,852 autoreload 40952 20708 C:\geekbrains\django\hw2\MyProject\MyApp\views.py changed, reloading.
+INFO 2024-02-17 14:00:10,368 autoreload 30644 13784 Watching for file changes with StatReloader
+INFO 2024-02-17 14:00:34,563 autoreload 30644 13784 C:\geekbrains\django\hw2\MyProject\MyApp\management\commands\create_client.py changed, reloading.
+INFO 2024-02-17 14:00:35,179 autoreload 41536 31220 Watching for file changes with StatReloader
+INFO 2024-02-17 14:00:51,450 basehttp 41536 22312 "GET / HTTP/1.1" 200 286
+WARNING 2024-02-17 14:00:51,569 log 41536 22312 Not Found: /favicon.ico
+WARNING 2024-02-17 14:00:51,569 basehttp 41536 22312 "GET /favicon.ico HTTP/1.1" 404 3184
+WARNING 2024-02-17 14:01:09,751 log 41536 22312 Not Found: /createClients
+WARNING 2024-02-17 14:01:09,751 basehttp 41536 22312 "GET /createClients HTTP/1.1" 404 3190
+INFO 2024-02-17 14:02:19,407 autoreload 41536 31220 C:\geekbrains\django\hw2\MyProject\MyApp\urls.py changed, reloading.
+INFO 2024-02-17 14:02:19,958 autoreload 17704 21092 Watching for file changes with StatReloader
+INFO 2024-02-17 14:02:23,794 basehttp 17704 11152 "GET /createClients HTTP/1.1" 301 0
+ERROR 2024-02-17 14:02:23,868 log 17704 9132 Internal Server Error: /createClients/
+Traceback (most recent call last):
+  File "C:\Users\Alex\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Alex\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\geekbrains\django\hw2\MyProject\MyApp\views.py", line 29, in create_clients
+    command.handle(name, email, phone, city)
+  File "C:\geekbrains\django\hw2\MyProject\MyApp\management\commands\create_client.py", line 9, in handle
+    client = Client(name=name, email=email,
+  File "C:\Users\Alex\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Client() got unexpected keyword arguments: 'password'
+ERROR 2024-02-17 14:02:23,872 basehttp 17704 9132 "GET /createClients/ HTTP/1.1" 500 79879
+INFO 2024-02-17 14:02:59,177 autoreload 17704 21092 C:\geekbrains\django\hw2\MyProject\MyApp\management\commands\create_client.py changed, reloading.
+INFO 2024-02-17 14:02:59,674 autoreload 20092 33020 Watching for file changes with StatReloader
+INFO 2024-02-17 14:03:15,864 basehttp 20092 9284 "GET /createClients/ HTTP/1.1" 200 25
+INFO 2024-02-17 14:03:55,770 basehttp 20092 9284 "GET /getClient/ HTTP/1.1" 200 136
+INFO 2024-02-17 14:05:12,184 autoreload 20092 33020 C:\geekbrains\django\hw2\MyProject\MyApp\views.py changed, reloading.
+INFO 2024-02-17 14:05:12,802 autoreload 33012 33756 Watching for file changes with StatReloader
+INFO 2024-02-17 14:05:26,122 basehttp 33012 41352 "GET /getAllClients/ HTTP/1.1" 200 657
+INFO 2024-02-17 14:08:20,272 autoreload 33012 33756 C:\geekbrains\django\hw2\MyProject\MyApp\views.py changed, reloading.
+INFO 2024-02-17 14:08:20,916 autoreload 19668 26596 Watching for file changes with StatReloader
+INFO 2024-02-17 14:08:24,795 basehttp 19668 34624 "GET /getAllClients/ HTTP/1.1" 200 19
+INFO 2024-02-17 14:08:31,835 autoreload 19668 26596 C:\geekbrains\django\hw2\MyProject\MyApp\views.py changed, reloading.
+INFO 2024-02-17 14:08:32,401 autoreload 16444 42300 Watching for file changes with StatReloader
+INFO 2024-02-17 14:08:34,777 basehttp 16444 42224 "GET /getAllClients/ HTTP/1.1" 200 19
+INFO 2024-02-17 14:08:36,495 basehttp 16444 42224 "GET /getAllClients/ HTTP/1.1" 200 19
+INFO 2024-02-17 14:08:52,672 autoreload 16444 42300 C:\geekbrains\django\hw2\MyProject\MyApp\views.py changed, reloading.
+INFO 2024-02-17 14:08:53,271 autoreload 16852 20872 Watching for file changes with StatReloader
+INFO 2024-02-17 14:08:55,533 basehttp 16852 28076 "GET /getAllClients/ HTTP/1.1" 200 23
+INFO 2024-02-17 14:09:02,166 autoreload 16852 20872 C:\geekbrains\django\hw2\MyProject\MyApp\views.py changed, reloading.
+INFO 2024-02-17 14:09:02,797 autoreload 21776 4260 Watching for file changes with StatReloader
+INFO 2024-02-17 14:09:06,131 basehttp 21776 32868 "GET /getAllClients/ HTTP/1.1" 200 652
+INFO 2024-02-17 14:09:32,321 autoreload 21776 4260 C:\geekbrains\django\hw2\MyProject\MyApp\views.py changed, reloading.
+INFO 2024-02-17 14:09:32,922 autoreload 2296 13288 Watching for file changes with StatReloader
+INFO 2024-02-17 14:09:35,015 basehttp 2296 12516 "GET /getAllClients/ HTTP/1.1" 200 614
+INFO 2024-02-17 14:10:06,616 autoreload 2296 13288 C:\geekbrains\django\hw2\MyProject\MyApp\views.py changed, reloading.
+INFO 2024-02-17 14:10:07,162 autoreload 23028 2520 Watching for file changes with StatReloader
+INFO 2024-02-17 14:10:09,680 basehttp 23028 6392 "GET /getAllClients/ HTTP/1.1" 200 606
+INFO 2024-02-17 14:10:38,235 autoreload 23028 2520 C:\geekbrains\django\hw2\MyProject\MyApp\views.py changed, reloading.
+INFO 2024-02-17 14:10:38,798 autoreload 7724 24488 Watching for file changes with StatReloader
+INFO 2024-02-17 14:10:44,286 basehttp 7724 36848 "GET /getAllClients/ HTTP/1.1" 200 606
+ERROR 2024-02-17 14:10:57,964 log 7724 36848 Internal Server Error: /updateClients/
+Traceback (most recent call last):
+  File "C:\Users\Alex\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Alex\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\geekbrains\django\hw2\MyProject\MyApp\views.py", line 56, in update_client_name
+    client = command.handle(id, name)
+  File "C:\Users\Alex\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\django\core\management\base.py", line 611, in handle
+    raise NotImplementedError(
+NotImplementedError: subclasses of BaseCommand must provide a handle() method
+ERROR 2024-02-17 14:10:57,980 basehttp 7724 36848 "GET /updateClients/ HTTP/1.1" 500 71740
+INFO 2024-02-17 14:11:25,444 autoreload 7724 24488 C:\geekbrains\django\hw2\MyProject\MyApp\management\commands\update_client.py changed, reloading.
+INFO 2024-02-17 14:11:26,059 autoreload 30048 13124 Watching for file changes with StatReloader
+INFO 2024-02-17 14:11:29,094 basehttp 30048 29904 "GET /updateClients/ HTTP/1.1" 200 129
+INFO 2024-02-17 14:11:46,933 basehttp 30048 29904 "GET /deleteClient/ HTTP/1.1" 200 23
+INFO 2024-02-17 14:12:21,979 autoreload 30048 13124 C:\geekbrains\django\hw2\MyProject\MyApp\management\commands\delete_client.py changed, reloading.
+INFO 2024-02-17 14:12:22,582 autoreload 33140 12108 Watching for file changes with StatReloader
+INFO 2024-02-17 14:12:25,294 basehttp 33140 30108 "GET /deleteClient/ HTTP/1.1" 200 135
